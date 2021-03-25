@@ -12,19 +12,26 @@
    * Photoshop
   4. **Code example:**
    
-    function testCycle(a, b){
-    var x="";
-    if(a>b){
-        for(i=1;b<=a;i++){
-    x+=" "+(a--);}    
-    }else{
-        for(i=1;a<=b;i++){
-        x+=" "+(b--);}
-    }
-    return x;
-    }
+    let h = document.querySelector('.hour'),
+    m = document.querySelector('.min'),
+    s = document.querySelector('.sec'),
+    time = document.querySelector('.cogs');
 
->
+
+setInterval(clock,1000);
+
+function clock() {
+ let d = new Date();
+ let hh = (d.getHours() * 30) + (d.getMinutes() / 2);
+ let mm = d.getMinutes() * 6;
+ let ss = d.getSeconds() * 6;
+ h.style.transform = `rotate(${hh}deg)`;
+ m.style.transform = `rotate(${mm}deg)`;
+ s.style.transform = `rotate(${ss}deg)`;
+ time.innerHTML = d.getHours() + ":"+d.getMinutes() + ":" +d.getSeconds();
+}
+
+
 5. **Experience:**
 * course-work on C++
 * tasks on HTML/CSS in codecademy
