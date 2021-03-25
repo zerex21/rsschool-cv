@@ -105,11 +105,24 @@
         </ol>
         <h2>Code example:</h2>
 
-        <span>function testCycle(a, b){<br> var x=""; if(a>b){<br> for(i=1;b
-        <=a;i++){<br>
-            x+=" " +(a--);}<br> }else{ for(i=1;a
-            <=b;i++)<br>
-                { x+=" " +(b--);} } return x; }</span>
+        <pre>let h = document.querySelector('.hour'),
+    m = document.querySelector('.min'),
+    s = document.querySelector('.sec'),
+    time = document.querySelector('.cogs');
+
+
+      setInterval(clock,1000);
+
+    function clock() {
+    let d = new Date();
+    let hh = (d.getHours() * 30) + (d.getMinutes() / 2);
+    let mm = d.getMinutes() * 6;
+    let ss = d.getSeconds() * 6;
+    h.style.transform = `rotate(${hh}deg)`;
+    m.style.transform = `rotate(${mm}deg)`;
+    s.style.transform = `rotate(${ss}deg)`;
+    time.innerHTML = d.getHours() + ":"+d.getMinutes() + ":" +d.getSeconds();
+   }</pre>
         <h2>English level B1</h2>
     </main>
     <footer>
