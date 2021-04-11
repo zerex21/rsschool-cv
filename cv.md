@@ -35,7 +35,7 @@
 * course(Udemy)
 
 6.**Education:** 
-* 3rd year student of BSUIR (engineer-electronic-programmer)
+* 3rd year student of BSUIR (engineer-electronic-programmer)(extramural studies)
 * course on HTML/CSS in codecademy
 * course on basic JS in Udemy
 7. **English level B1**
