@@ -4,7 +4,7 @@
   --pink-color: #ffd6d2;
 }
 pre{
-margin-left:0px;
+  margin-left: 0;
 }
 body {
   box-sizing: border-box;
@@ -117,7 +117,9 @@ main :not(.contacts) ul {
   margin-top: 30px;
   margin-bottom: 15px;
 }
-
+.code-prev{
+  margin-left: 0px;
+}
 .right-column .about-myself .sub-header {
   margin-top: 0;
 }
