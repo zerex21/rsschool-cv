@@ -126,8 +126,8 @@
           </div>
           <p><strong>Clock Watch:</strong> Calculating the exact time</p>
           <div>
-            <pre  class="code-example">
-              <code>
+            <pre class="code-example">
+              <code >
                 let h = document.querySelector('.hour'),
                   m = document.querySelector('.min'),
                   s = document.querySelector('.sec'),
@@ -138,15 +138,16 @@
               
                    function clock() {
                    let d = new Date();
-                   let hh = (d.getHours() * 30) + (d.getMinutes() / 2);
+                   let hh = (d.getHours() * 30) + 
+                            (d.getMinutes() / 2);
                    let mm = d.getMinutes() * 6;
                    let ss = d.getSeconds() * 6;
                    h.style.transform = `rotate(${hh}deg)`;
                    m.style.transform = `rotate(${mm}deg)`;
                    s.style.transform = `rotate(${ss}deg)`;
                    time.innerHTML = d.getHours() + ":"+ 
-                                    d.getMinutes() + ":" 
-                                    + d.getSeconds();
+                                    d.getMinutes() + ":" + 
+                                    d.getSeconds();
                      }
   }</code>
             </pre>
