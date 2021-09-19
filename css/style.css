@@ -45,6 +45,7 @@ header {
 header img {
   margin-bottom: 10px;
   border: 10px solid var(--pink-color);
+  border-radius: 50%; 
 }
 
 header h1 {
