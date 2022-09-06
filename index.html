@@ -95,10 +95,7 @@
     m = document.querySelector('.min'),
     s = document.querySelector('.sec'),
     time = document.querySelector('.cogs');
-
-
-      setInterval(clock,1000);
-
+    setInterval(clock,1000);
     function clock() {
     let d = new Date();
     let hh = (d.getHours() * 30) + (d.getMinutes() / 2);
